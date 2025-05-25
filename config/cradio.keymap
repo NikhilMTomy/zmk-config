@@ -132,8 +132,8 @@
         fun_layer {
             bindings = <
         //╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-        //│ RESET         │ PROFILE 0     │ PROFILE 1     │ PROFILE 2     │ CLEAR BT      │   │               │               │               │ ZMK Studio    │ RESET         │
-           &sys_reset       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR          &none           &none           &none           &studio_unlock  &sys_reset
+        //│ RESET         │ PROFILE 0     │ PROFILE 1     │ PROFILE 2     │ CLEAR BT      │   │               │               │               │               │ RESET         │
+           &sys_reset       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR          &none           &none           &none           &none           &sys_reset
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│ BOOTLOADER    │               │               │               │ F11           │   │ F12           │               │               │               │ BOOTLOADER    │
             &bootloader     &none           &none           &none           &kp F11             &kp F12         &none           &none           &none           &bootloader
