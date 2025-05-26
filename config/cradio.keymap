@@ -57,7 +57,7 @@
             &trans          &trans          &kp LPAR        &kp RPAR        &kp TILDE           &kp INS         &kp HOME        &kp END         &kp PG_UP       &kp PG_DN
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│ _             │ -             │ [             │ ]             │ `             │   │ LEFT          │ DOWN          │ UP            │ RIGHT         │ ESCAPE        │
-            HRML(UNDER,     MINUS,          LBKT,           RBKT)           &kp GRAVE           &kp LEFT        HRMR(DOWN,      UP,             RIGHT,          ESC)
+            HRML(UNDER,     MINUS,          LBKT,           RBKT)           &kp GRAVE           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp ESC
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│ +             │ =             │ {             │ }             │               │   │ DELETE        │ \ |           │ |             │ SEMICOLON     │ COLON         │
             &kp PLUS        &kp EQUAL       &kp LBRC        &kp RBRC        &trans              &kp DEL         &kp BSLH        &kp PIPE        &kp SEMI        &kp COLON
