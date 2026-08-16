@@ -63,8 +63,8 @@
         //│ _             │ -             │ [             │ ]             │ `             │   │ LEFT          │ DOWN          │ UP            │ RIGHT         │ ESCAPE        │
             &kp UNDER       HRML_NS(MINUS,  LBKT,           RBKT)           &kp GRAVE           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp ESC
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-        //│ +             │ =             │ {             │ }             │               │   │ DELETE        │ BACKSPACE     │               │ ' "           │ "             │
-            &kp PLUS        &kp EQUAL       &kp LBRC        &kp RBRC        &trans              &kp DEL         &kp BSPC        &trans          &kp SQT         &kp DQT
+        //│ +             │ =             │ {             │ }             │               │   │ RESET         │ BACKSPACE     │ DELETE        │ ' "           │ "             │
+            &kp PLUS        &kp EQUAL       &kp LBRC        &kp RBRC        &trans              &sys_reset      &kp BSPC        &kp DEL         &kp SQT         &kp DQT
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
                                                             &trans          &trans              &trans          &trans
@@ -81,8 +81,8 @@
         //│ 1             │ 2             │ 3             │ 4             │ 5             │   │ 6             │ 7             │ 8             │ 9             │ 0             │
             &kp N1          HRML_NS(N2,     N3,             N4)             &kp N5              &kp N6          HRMR_NS(N7,     N8,             N9)             &kp N0
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-        //│               │               │               │               │               │   │               │               │               │               │               │
-            &trans          &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans
+        //│               │               │               │               │ RESET         │   │               │               │               │               │               │
+            &trans          &trans          &trans          &trans          &sys_reset          &trans          &trans          &trans          &trans          &trans
         //╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
         //                                                │               │               │   │               │               │
                                                             &trans          &trans              &trans          &trans
@@ -93,8 +93,8 @@
         tri_layer {
             bindings = <
         //╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-        //│ RESET         │ PROFILE 0     │ PROFILE 1     │ PROFILE 2     │ CLEAR BT      │   │ CAPS          │               │               │ ZMK Studio    │ RESET         │
-           &sys_reset       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR          &caps_word      &trans          &trans          &studio_unlock  &sys_reset
+        //│               │ PROFILE 0     │ PROFILE 1     │ PROFILE 2     │ CLEAR BT      │   │ CAPS          │               │               │ ZMK Studio    │               │
+            &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR          &caps_word      &trans          &trans          &studio_unlock  &trans
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│ BOOTLOADER    │               │               │               │ F11           │   │ F12           │               │               │               │ BOOTLOADER    │
             &bootloader     &trans          &trans          &trans          &kp F11             &kp F12         &trans          &trans          &trans          &bootloader
