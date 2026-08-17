@@ -58,7 +58,7 @@
             bindings = <
         //╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
         //│ |             │ \ |           │ (             │ )             │ ~             │   │ INSERT        │ HOME          │ END           │ PAGE UP       │ PAGE DN       │
-            &kp PIPE        &kp PIPE        &kp LPAR        &kp RPAR        &kp TILDE           &kp INS         &kp HOME        &kp END         &kp PG_UP       &kp PG_DN
+            &kp PIPE        &kp BSLH        &kp LPAR        &kp RPAR        &kp TILDE           &kp INS         &kp HOME        &kp END         &kp PG_UP       &kp PG_DN
         //├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         //│ _             │ -             │ [             │ ]             │ `             │   │ LEFT          │ DOWN          │ UP            │ RIGHT         │ ESCAPE        │
             &kp UNDER       HRML_NS(MINUS,  LBKT,           RBKT)           &kp GRAVE           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp ESC
